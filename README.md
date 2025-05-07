@@ -1,12 +1,67 @@
-# React + Vite
+# Trendyol Clone Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, Trendyol'un temel kullanıcı arayüzünü ve bazı işlevselliklerini taklit etmeyi amaçlayan bir Front-End geliştirme çalışmasıdır. Proje, React.js ve Axios kullanılarak geliştirilmiştir ve temel olarak ürün listeleme, ürün detayları ve sepet yönetimi gibi özellikleri içermektedir.
 
-Currently, two official plugins are available:
+## 🚀 Proje Durumu
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Bu proje hala geliştirilme aşamasındadır. Eksik veya geliştirilecek bölümler için bir TODO listesi oluşturulmuştur.
 
-## Expanding the ESLint configuration
+## ✅ Kullanılan Teknolojiler
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js
+- Axios
+- HTML5
+- CSS3
+- JavaScript
+
+## 📦 Özellikler
+
+- API üzerinden ürün verilerinin çekilmesi
+- Ürünlerin listeleme sayfasında gösterilmesi
+- Ürün detay sayfası
+- Sepet yönetimi (Ürün ekleme/çıkarma)
+- Fiyat hesaplama
+
+### 📝 TODO Listesi
+
+- [ ] Ürün filtreleme özelliği ekleme
+- [ ] Kullanıcı giriş ve kayıt işlemleri
+- [ ] Ödeme entegrasyonu
+- [ ] Responsive tasarım iyileştirmeleri
+
+## 📂 Kurulum
+
+1. Projeyi klonlayın:
+
+```bash
+git clone https://github.com/Omer6129/trendyol-clone.git
+```
+
+2. Proje dizinine gidin:
+
+```bash
+cd trendyol-clone
+```
+
+3. Gerekli paketleri yükleyin:
+
+```bash
+npm install
+```
+
+4. Projeyi başlatın:
+
+```bash
+npm start
+```
+
+## 📢 Geri Bildirim
+
+Geri bildirim ve önerileriniz için GitHub üzerinden issue oluşturabilir veya benimle iletişime geçebilirsiniz.
+
+- [LinkedIn](https://www.linkedin.com/in/ömer-yalınkılınç)
+- [GitHub](https://github.com/Omer6129)
+
+---
+
+Bu proje, öğrenme amaçlı geliştirilmiş bir çalışmadır ve ticari amaçlı kullanılmamalıdır.
