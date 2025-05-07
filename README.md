@@ -52,7 +52,7 @@ npm install
 4. Projeyi başlatın:
 
 ```bash
-npm start
+npm run dev
 ```
 
 ## 📢 Geri Bildirim
