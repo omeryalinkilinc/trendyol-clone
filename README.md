@@ -9,6 +9,7 @@ Bu proje hala geliştirilme aşamasındadır. Eksik veya geliştirilecek bölüm
 ## ✅ Kullanılan Teknolojiler
 
 - React.js
+- Vite.js
 - Axios
 - HTML5
 - CSS3
