@@ -4,7 +4,7 @@ const categoryData = [
     title: "Çalışma Alanlarına Konfor Kat",
     image:
       "https://cdn.dsmcdn.com/ty1666/tr-event-banner/acaf560f-a98e-4cd7-81fd-25cc06a95a4ctr_3233196.jpeg",
-    slug: "çalışma-araçları",
+    slug: "calisma-araclari",
   },
 
   {
@@ -12,7 +12,7 @@ const categoryData = [
     title: "Ürünleri Keşfet",
     image:
       "https://cdn.dsmcdn.com/ty1666/tr-event-banner/fdf1f492-b902-47e1-b397-3f88d9b03ca2tr_3233624.jpeg",
-    slug: "ürünleri-keşfet",
+    slug: "urunleri-kesfet",
   },
 
   {
@@ -36,7 +36,7 @@ const categoryData = [
     title: "Ev Alışverişi - Sofra Ürünleri",
     image:
       "https://cdn.dsmcdn.com/ty1667/tr-event-banner/2a1b32a0-df83-4f2a-b522-a13375d0eeb2tr_3233054.jpeg",
-    slug: "çeyiz-hazırlıkları",
+    slug: "ceyiz-hazirliklari",
   },
 
   {
@@ -44,7 +44,7 @@ const categoryData = [
     title: "Evde Avantajlı Ürünler",
     image:
       "https://cdn.dsmcdn.com/ty1666/tr-event-banner/304731da-d978-4be3-8b70-0696d461502ftr_3233064.jpeg",
-    slug: "ürünlere-göz-at",
+    slug: "urunlere-goz-at",
   },
 
   {
@@ -52,7 +52,7 @@ const categoryData = [
     title: "Mobilyada Avantajlı Ürünler",
     image:
       "https://cdn.dsmcdn.com/ty1667/tr-event-banner/0827b802-7ced-4200-9ec1-c11dfd77ebc2tr_3233180.jpeg",
-    slug: "avantajlı-ürünler",
+    slug: "avantajli-urunler",
   },
 
   {
@@ -60,7 +60,7 @@ const categoryData = [
     title: "Aradığın Saat & Gözlükler",
     image:
       "https://cdn.dsmcdn.com/ty1667/tr-event-banner/2e4e461d-2c82-490a-b0df-8ef824f8e5e4tr_3233405.jpeg",
-    slug: "aksesuar-&-saat-&-gözlük-fırsatları",
+    slug: "aksesuar-&-saat-&-gozluk-firsatlari",
   },
 
   {
@@ -68,7 +68,7 @@ const categoryData = [
     title: "Avantajlı Ürünler",
     image:
       "https://cdn.dsmcdn.com/ty1666/tr-event-banner/cd38a54d-256f-40c8-93ff-eab7b6caeeb6tr_3233212.jpeg",
-    slug: "yatak-odsaı-mobilyası",
+    slug: "yatak-odsai-mobilyasi",
   },
 
   {
@@ -76,7 +76,7 @@ const categoryData = [
     title: "Avantajlı Ürünler",
     image:
       "https://cdn.dsmcdn.com/ty1665/tr-event-banner/4f57c113-aa13-43cf-858e-35861735e8d3tr_3233192.jpeg",
-    slug: "mutfak-&-banyo-mobilyası",
+    slug: "mutfak-&-banyo-mobilyasi",
   },
 
   {
@@ -84,7 +84,7 @@ const categoryData = [
     title: "Avantajlı Ürünler",
     image:
       "https://cdn.dsmcdn.com/ty1666/tr-event-banner/ef6d3c3b-267a-499a-b30a-c9d090716858tr_3233398.jpeg",
-    slug: "ayakkabı-ve-çanta-trendini-yakala",
+    slug: "ayakkabi-ve-canta-trendini-yakala",
   },
   {
     id: 12,

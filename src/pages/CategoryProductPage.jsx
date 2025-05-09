@@ -1,23 +1,38 @@
 import React from "react";
-import allProducts from "../components/CategoryProductData";
+import products from "../components/CategoryProductData";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import ProductCard from "../components/CategoryProductData";
-import CategoryProductDetail from "../pages/CategoryProductDetail";
 import "../assets/styles/CategoryProductPage.css";
-
+import StarRating from "../components/StarRating";
+import { Link } from "react-router-dom";
 const CategoryProductPage = () => {
   const { slug } = useParams();
-  const [products, setProducts] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [fastDelivery, setFastDelivery] = useState(false);
+  const [freeShipping, setFreeShipping] = useState(false);
 
   useEffect(() => {
-    const filtered = allProducts.filter(
-      (product) => product.categorySlug === slug
-    );
-    setProducts(filtered);
-    setLoading(false);
-  }, [slug]);
+    const applyFilters = () => {
+      let filtered = products.filter(
+        (product) => product.categorySlug === slug
+      );
+
+      if (fastDelivery) {
+        filtered = filtered.filter((product) => product.fast_delivery);
+      }
+
+      if (freeShipping) {
+        filtered = filtered.filter((product) => product.shipping_free);
+      }
+
+      setFilteredProducts(filtered);
+      setLoading(false);
+    };
+
+    applyFilters();
+  }, [slug, fastDelivery, freeShipping]);
+
   if (loading) return <p>Yükleniyor...</p>;
 
   console.log("Slug:", slug);
@@ -51,11 +66,21 @@ const CategoryProductPage = () => {
                 <img src="https://cdn.dsmcdn.com/web/production/best-sellers.svg" />
                 <span>Yüksek Puanlı Satıcılar</span>
               </button>
-              <button className="quick_filters_item free_cargo">
+              <button
+                className={`quick_filters_item free_cargo ${
+                  freeShipping ? "active" : ""
+                }`}
+                onClick={() => setFreeShipping(!freeShipping)}
+              >
                 <img src="https://cdn.dsmcdn.com/web/production/cargo-free.svg" />
                 <span>Kargo Bedava</span>
               </button>
-              <button className="quick_filters_item rush_delivery_times">
+              <button
+                className={`quick_filters_item rush_delivery_times ${
+                  fastDelivery ? "active" : ""
+                }`}
+                onClick={() => setFastDelivery(!fastDelivery)}
+              >
                 <img src="https://cdn.dsmcdn.com/web/production/fast-delivery.svg" />
                 <span>Hızlı Teslimat</span>
               </button>
@@ -65,9 +90,53 @@ const CategoryProductPage = () => {
       </aside>
       <main>
         <div className="category_product_detail_container">
-          {products.map((product) => (
-            <ProductCard key={product.id || product.title} product={product} />
-          ))}
+          {filteredProducts.length > 0 ? (
+            filteredProducts.map((product) => (
+              <div key={product.id} className="category_product_card">
+                <Link to={`/product/${product.id}`}>
+                  <div className="favorite_btn">
+                    <i className="wd-fvrt-btn i-heart"></i>
+                  </div>
+                  <div>
+                    <div className="card_img">
+                      <img src={product.image} alt={product.title} />
+                    </div>
+                    <div className="product_badges">
+                      {product.fast_delivery && (
+                        <div className="badge fast_delivery">
+                          <i className="i-badge-cargo"></i>
+                          <span>HIZLI TESLİMAT</span>
+                        </div>
+                      )}
+                      {product.shipping_free && (
+                        <div className="badge shipping_free">
+                          <i className="i-my-orders"></i>
+                          <span>KARGO BEDAVA</span>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                  <div className="category_product_card_body">
+                    <div>
+                      <div className="product_title">
+                        <span>{product.title}</span>
+                      </div>
+                      <div className="product_starrating">
+                        <p>
+                          <StarRating />
+                        </p>
+                      </div>
+                    </div>
+                    <div className="product_price">
+                      <p>{product.price} TL</p>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            ))
+          ) : (
+            <p>Bu kategoriye ait ürün bulunamadı.</p>
+          )}
         </div>
       </main>
     </div>

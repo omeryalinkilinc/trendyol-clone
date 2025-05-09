@@ -40,7 +40,11 @@ const ProductDetail = () => {
           <div className="product_image_container">
             <img
               className="product_image"
-              src={product.images[0]}
+              src={
+                product.images
+                  ? product.images[0] // API'den gelen ürün
+                  : product.image // Local  ürün
+              }
               alt={product.title}
               width="300"
             />

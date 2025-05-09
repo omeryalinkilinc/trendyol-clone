@@ -94,3 +94,114 @@
 .rush_delivery_times {
   background-color: #effbf5;
 }
+
+.category_product_card {
+  cursor: pointer;
+  position: relative;
+  border: 1px solid #e6e6e6;
+  margin-bottom: 20px;
+  margin-left: 19px;
+  height: auto;
+  width: 230px;
+}
+
+.card_img img {
+  width: 229px;
+  height: 347px;
+}
+
+.category_product_detail_container .category_product_card_body {
+  padding: 10px;
+}
+
+.product_starrating {
+  margin: 2px 0 5px 0;
+}
+
+.product_price {
+  min-height: 36px;
+  margin-top: 4px;
+}
+
+.product_price p {
+  color: #f27a1a;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  font-family: source_sans_proregular, sans-serif;
+}
+
+.quick_filters_item.active {
+  background-color: #ffdbdb; /* Aktifken arka plan rengi */
+  border: 1px solid #ff5757; /* Aktifken kenarlık */
+}
+
+.product_badges {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.badge .fast_delivery {
+  margin: 3px;
+}
+
+.product_badges .fast_delivery {
+  background-color: #0bc15c;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  border-radius: 4px;
+  width: 72px;
+  height: 24px;
+  margin-bottom: 5px;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+.product_badges .fast_delivery span {
+  font-family: source_sans_prosemibold, sans-serif;
+  font-weight: 600;
+  width: 40px;
+  font-size: 10px;
+  line-height: 9px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  margin-left: 4px;
+  margin-top: 1px;
+}
+
+.product_badges .shipping_free {
+  background-color: #535353;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  border-radius: 4px;
+  width: 72px;
+  height: 24px;
+  margin-bottom: 5px;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+.product_badges .shipping_free span {
+  font-family: source_sans_prosemibold, sans-serif;
+  font-weight: 600;
+  width: 40px;
+  font-size: 10px;
+  line-height: 9px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  margin-left: 4px;
+  margin-top: 1px;
+}
+
+.category_product_card_body .product_title {
+  line-height: 18px;
+  font-size: 14px;
+  color: #333;
+  margin-right: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: source_sans_proregular, sans-serif;
+}
