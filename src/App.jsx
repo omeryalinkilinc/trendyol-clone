@@ -10,6 +10,7 @@ import { CartProvider } from "./context/CartContext.jsx";
 import CartPage from "./pages/CartPage.jsx";
 import RecommendedProducts from "./pages/RecommendedProducts";
 import CategoryProductPage from "./pages/CategoryProductPage.jsx";
+import NotFound from "./pages/NotFound.jsx";
 function App() {
   return (
     <FavoritesProvider>
@@ -24,6 +25,7 @@ function App() {
               <Route path="/sana-ozel" element={<RecommendedProducts />} />
               <Route path="/kategori/:slug" element={<CategoryProductPage />} />
             </Route>
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
       </CartProvider>

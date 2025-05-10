@@ -1,0 +1,90 @@
+.notfound {
+  background-image: url("https://cdn.dsmcdn.com/web/production/404efsane.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  background-size: cover;
+  background-position: center;
+  padding-top: 5px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.notfound .container {
+  max-width: 1140px;
+  width: 100%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.notfound .header {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.notfound .header_left {
+  margin-top: 15px;
+  float: left;
+}
+
+.notfound .header img {
+  width: 150px;
+  margin-top: 3px;
+}
+
+.notfound .header_right {
+  float: right;
+  margin-top: 10px;
+}
+
+.box_astrounat {
+  will-change: transform;
+  animation: move-astronaut 20s infinite linear both alternate;
+}
+
+.box_astrounat img {
+  animation: rotate-astronaut 70s infinite linear both alternate;
+}
+
+@keyframes rotate-astronaut {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-720deg);
+    transform: rotate(-720deg);
+  }
+}
+
+.clear {
+  clear: both !important;
+}
+
+.typography {
+  position: relative;
+  bottom: 75px;
+  z-index: 0;
+}
+
+.typography .bigtypography h1 {
+  font-size: 11rem;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px 3px #6c9db7;
+  letter-spacing: 5px;
+  margin: 0px;
+}
+
+.typography .smalltypography p {
+  font-size: 1.3em;
+  line-height: 150%;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
+}
