@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/styles/FavoritesPage.css";
+import "../assets/styles/FavoritesPage.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-regular-svg-icons";
 import input_seacrh_sticky_icon from "../assets/images/search_icon.png";

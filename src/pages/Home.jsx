@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/styles/Home.css";
+import "../assets/styles/Home.scss";
 import circle_img1 from "../assets/images/circle_img1.png";
 import circle_img2 from "../assets/images/circle_img2.png";
 import circle_img3 from "../assets/images/circle_img3.png";

@@ -1,4 +1,4 @@
-import "../assets/styles/ProductList.css";
+import "../assets/styles/ProductList.scss";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";

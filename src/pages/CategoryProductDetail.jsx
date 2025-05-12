@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/styles/CategoryProductDetail.css";
+import "../assets/styles/CategoryProductDetail.scss";
 import StarRating from "../components/StarRating";
 import { Link } from "react-router-dom";
 const CategoryProductDetail = ({ id, title, image, price }) => {

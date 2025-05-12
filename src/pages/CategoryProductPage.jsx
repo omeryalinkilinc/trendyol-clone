@@ -2,7 +2,7 @@ import React from "react";
 import products from "../components/CategoryProductData";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import "../assets/styles/CategoryProductPage.css";
+import "../assets/styles/CategoryProductPage.scss";
 import StarRating from "../components/StarRating";
 import { Link } from "react-router-dom";
 const CategoryProductPage = () => {

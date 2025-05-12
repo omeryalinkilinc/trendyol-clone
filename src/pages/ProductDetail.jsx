@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import StarRating from "../components/StarRating";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import "../assets/styles/ProductDetail.css";
+import "../assets/styles/ProductDetail.scss";
 import { useCart } from "../context/CartContext";
 import localProducts from "../components/CategoryProductData";
 

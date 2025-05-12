@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/styles/CategoryDropdown.css";
+import "../assets/styles/CategoryDropdown.scss";
 import { useState } from "react";
 import kadin_icon from "../assets/images/kadin_icon.png";
 import erkek_icon from "../assets/images/erkek_icon.png";
@@ -1569,14 +1569,14 @@ const CategoryDropdown = () => {
             onMouseEnter={() => setActiveCategory(activeCategory)}
             onMouseLeave={() => setActiveCategory(null)}
           >
-            {activeCategory.subcategories.map((sub, i) => (
+            {activeCategory?.subcategories?.map((sub, i) => (
               <div key={i} className="subcategory-column">
                 <div className="subcategory_row">
                   <span className="subcategory_column_name">{sub.name}</span>
                   <img src={right_icon} />
                 </div>
                 <ul>
-                  {sub.items.map((item, j) => (
+                  {sub.items?.map((item, j) => (
                     <li key={j}>
                       <a className="subcategory_item">{item}</a>
                     </li>

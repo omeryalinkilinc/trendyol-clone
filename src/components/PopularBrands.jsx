@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/styles/PopularBrands.css";
+import "../assets/styles/PopularBrands.scss";
 
 const PopularBrands = () => {
   return (

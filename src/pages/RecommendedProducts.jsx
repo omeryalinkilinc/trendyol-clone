@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../assets/styles/RecommendedProducts.css";
+import "../assets/styles/RecommendedProducts.scss";
 import { getProducts } from "../api/api.jsx";
 import { Link } from "react-router-dom";
 import StarRating from "../components/StarRating.jsx";
