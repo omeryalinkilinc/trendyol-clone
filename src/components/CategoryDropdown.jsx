@@ -1546,46 +1546,50 @@ const CategoryDropdown = () => {
   return (
     <div className="CategoryDropdown">
       <div className="dropdown_container">
-        <ul className="category-list">
-          {data.map((category, index) => (
-            <li
-              key={index}
-              className="category-item"
-              onMouseEnter={() => setActiveCategory(category)}
+        <div className="category_list_container">
+          <ul className="category-list">
+            {data.map((category, index) => (
+              <li
+                key={index}
+                className="category-item"
+                onMouseEnter={() => setActiveCategory(category)}
+                onMouseLeave={() => setActiveCategory(null)}
+              >
+                <div className="category_item_description">
+                  <img src={category.icon} alt="category.name" />
+                  {category.name}
+                </div>
+                <img src={right_icon} />
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="subcategory_container">
+          {activeCategory && (
+            <div
+              className="subcategory-panel"
+              onMouseEnter={() => setActiveCategory(activeCategory)}
               onMouseLeave={() => setActiveCategory(null)}
             >
-              <div className="category_item_description">
-                <img src={category.icon} alt="category.name" />
-                {category.name}
-              </div>
-              <img src={right_icon} />
-            </li>
-          ))}
-        </ul>
-
-        {activeCategory && (
-          <div
-            className="subcategory-panel"
-            onMouseEnter={() => setActiveCategory(activeCategory)}
-            onMouseLeave={() => setActiveCategory(null)}
-          >
-            {activeCategory?.subcategories?.map((sub, i) => (
-              <div key={i} className="subcategory-column">
-                <div className="subcategory_row">
-                  <span className="subcategory_column_name">{sub.name}</span>
-                  <img src={right_icon} />
+              {activeCategory?.subcategories?.map((sub, i) => (
+                <div key={i} className="subcategory-column">
+                  <div className="subcategory_row">
+                    <span className="subcategory_column_name">{sub.name}</span>
+                    <img src={right_icon} />
+                  </div>
+                  <ul>
+                    {sub.items?.map((item, j) => (
+                      <li key={j}>
+                        <a className="subcategory_item">{item}</a>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <ul>
-                  {sub.items?.map((item, j) => (
-                    <li key={j}>
-                      <a className="subcategory_item">{item}</a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        )}
+              ))}
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

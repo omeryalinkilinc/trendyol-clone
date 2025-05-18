@@ -9,7 +9,10 @@ import {
   faHeart as faHeartRegular,
 } from "@fortawesome/free-regular-svg-icons";
 import CategoryDropdown from "../components/CategoryDropdown.jsx";
+import { useCart } from "../context/CartContext";
 const Navbar = () => {
+  const { cartItems } = useCart();
+  const totalQuantity = cartItems.reduce((sum, item) => sum + item.quantity, 0);
   return (
     <div className="Navbar">
       <div className="header_top">
@@ -133,6 +136,9 @@ const Navbar = () => {
                   <i className="i-bagg initial-icon"></i>
                   <i className="i-bagg-orange hover-icon"></i>
                   <p>Sepetim</p>
+                  {totalQuantity > 0 && (
+                    <div className="cart-count-badge">{totalQuantity}</div>
+                  )}
                 </div>
               </a>
             </li>

@@ -422,6 +422,20 @@ p {
 .seller_content {
   display: flex;
   gap: 8px;
+  .seller_name_text {
+    max-width: 165px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    .seller_link {
+      cursor: pointer;
+      color: #1f6bc1;
+      font-size: 13px;
+      line-height: 16px;
+      max-width: 140px;
+      font-family: source_sans_prosemibold, serif;
+    }
+  }
 }
 
 .seller_rating {

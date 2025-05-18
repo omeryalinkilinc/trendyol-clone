@@ -327,8 +327,9 @@
 .category_dropdown {
   display: none;
   width: 1200px;
+  height: 590px;
   position: absolute;
-  top: calc(100% + 3px);
+  top: calc(100% + 1px);
   right: 0px;
   left: 0px;
   background-color: white;
@@ -339,4 +340,18 @@
   .category_btn:hover & {
     display: block;
   }
+}
+
+.cart-count-badge {
+  background-color: #f27a1a;
+  color: #fff;
+  font-size: 11px;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  margin-left: 3px;
+  margin-top: 2px;
+  border-radius: 50%;
+  z-index: 1;
 }

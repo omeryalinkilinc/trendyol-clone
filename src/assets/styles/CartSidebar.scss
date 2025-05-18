@@ -1,0 +1,111 @@
+li {
+  list-style: none;
+}
+
+.cart_sidebar {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  z-index: 99999;
+  background-color: #fff;
+
+  .sidebar_container {
+    width: 86px;
+    padding-top: 16px;
+    height: 100vh;
+    padding: 16px;
+    border-left: 1px solid #e6e6e6;
+
+    .go_to_cart_btn {
+      width: 84px;
+      display: flex;
+      background-color: #f27a1a;
+      padding: 6px 0px;
+      border-radius: 6px;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      height: 36px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      color: #ffffff;
+      .cart_text {
+        display: inline;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 600;
+        font-family: "Source Sans Pro", sans-serif;
+      }
+      .product_quantity {
+        display: inline;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 600;
+        font-family: "Source Sans Pro", sans-serif;
+      }
+    }
+
+    .sub_total_container {
+      font-family: "Source Sans Pro", sans-serif;
+      width: 84px;
+      flex-direction: column;
+      padding: 16px 0px 0px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #e6e6e6;
+      .sub_total {
+        color: #333333;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 600;
+      }
+      .sub_total_price_container {
+        padding: 4px 5px;
+        margin: 4px 0px 12px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fef4eb;
+        border-radius: 2px;
+        .sub_total_price {
+          display: flex;
+          align-items: center;
+          gap: 3px;
+          color: #f27a1a;
+          font-size: 12px;
+          line-height: 16px;
+          height: 16px !important;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .sidebar_list {
+      width: 84px;
+      height: 180px;
+
+      img {
+        width: 82px;
+        height: 124px;
+        border: 1px solid #e6e6e6;
+        border-radius: 4px;
+        background-position: center;
+      }
+
+      .sidebar_product_footer {
+        display: flex;
+        justify-content: center;
+        height: 18px;
+        width: 84px;
+        font-size: 14px;
+        line-height: 18px;
+        color: #f27a1a;
+        text-align: center;
+        font-weight: 600;
+        font-family: "Source Sans Pro", sans-serif;
+      }
+    }
+  }
+}

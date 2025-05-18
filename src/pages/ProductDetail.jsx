@@ -5,6 +5,8 @@ import axios from "axios";
 import "../assets/styles/ProductDetail.scss";
 import { useCart } from "../context/CartContext";
 import localProducts from "../components/CategoryProductData";
+import { getProducts } from "../api/api.jsx";
+import { Link } from "react-router-dom";
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -12,10 +14,24 @@ const ProductDetail = () => {
   const { addToCart, cartItems } = useCart();
 
   useEffect(() => {
-    axios
-      .get(`https://dummyjson.com/products/${id}`)
-      .then((res) => setProduct(res.data))
-      .catch((err) => {
+    getProducts()
+      .then((products) => {
+        const selectedProduct = products.find(
+          (product) => String(product.id) === String(id)
+        );
+
+        if (selectedProduct) {
+          setProduct(selectedProduct);
+        } else {
+          const localProduct = localProducts.find(
+            (p) => String(p.id) === String(id)
+          );
+          setProduct(localProduct || null);
+        }
+      })
+      .catch((error) => {
+        console.log("Ürün getirilirken hata oluştu:", error);
+
         const localProduct = localProducts.find(
           (p) => String(p.id) === String(id)
         );
@@ -32,6 +48,8 @@ const ProductDetail = () => {
   if (!product) {
     return <div>Yükleniyor...</div>;
   }
+
+  const { title, price, images, seller } = product;
 
   return (
     <div className="product_detail_page">
@@ -181,7 +199,9 @@ const ProductDetail = () => {
               <div className="seller_info">
                 <div className="seller_content">
                   <div className="seller_name_text">
-                    <a href="#">XStore</a>
+                    <Link className="seller_link" to={`/magaza/${seller.name}`}>
+                      {seller.name}
+                    </Link>
                   </div>
                   <div className="seller_confirmation">
                     <img src="https://cdn.dsmcdn.com/indexing-sticker-stamp/stage/4b0d7ef1-8e8f-4c8f-b1c7-637e432ea2b4.png" />
@@ -210,7 +230,9 @@ const ProductDetail = () => {
               </div>
               <div className="visit_store">
                 <a href="#">
-                  <span>Mağazaya Git</span>
+                  <Link to={`/magaza/${product.seller.name}`}>
+                    <span>Mağazaya Git</span>
+                  </Link>
                   <i className="i-arrow-right"></i>
                 </a>
               </div>

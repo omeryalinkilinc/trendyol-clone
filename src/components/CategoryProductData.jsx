@@ -9,6 +9,11 @@ const products = [
     categorySlug: "ev-dekorasyon-urunleri",
     fast_delivery: true,
     shipping_free: true,
+    seller: {
+      name: "AY",
+      rating: 4.5,
+      followers: 750,
+    },
   },
 
   {
@@ -21,6 +26,11 @@ const products = [
     categorySlug: "ev-dekorasyon-urunleri",
     fast_delivery: false,
     shipping_free: true,
+    seller: {
+      name: "AX",
+      rating: 4.5,
+      followers: 60,
+    },
   },
   {
     id: 100003,
@@ -33,6 +43,11 @@ const products = [
     categorySlug: "calisma-araclari",
     fast_delivery: true,
     shipping_free: true,
+    seller: {
+      name: "KN",
+      rating: 4.5,
+      followers: 110,
+    },
   },
   {
     id: 100004,
@@ -44,6 +59,11 @@ const products = [
     categorySlug: "calisma-araclari",
     fast_delivery: false,
     shipping_free: true,
+    seller: {
+      name: "LI",
+      rating: 4.5,
+      followers: 250,
+    },
   },
   {
     id: 100005,
@@ -56,6 +76,11 @@ const products = [
     categorySlug: "calisma-araclari",
     fast_delivery: true,
     shipping_free: false,
+    seller: {
+      name: "AE",
+      rating: 4.5,
+      followers: 90,
+    },
   },
   {
     id: 100006,
@@ -68,6 +93,11 @@ const products = [
     categorySlug: "calisma-araclari",
     fast_delivery: false,
     shipping_free: false,
+    seller: {
+      name: "HY",
+      rating: 4.5,
+      followers: 450,
+    },
   },
   {
     id: 100007,
@@ -79,6 +109,11 @@ const products = [
     categorySlug: "urunleri-kesfet",
     fast_delivery: false,
     shipping_free: true,
+    seller: {
+      name: "LOY",
+      rating: 4.5,
+      followers: 350,
+    },
   },
   {
     id: 100008,
@@ -90,6 +125,11 @@ const products = [
     categorySlug: "urunleri-kesfet",
     fast_delivery: true,
     shipping_free: true,
+    seller: {
+      name: "JH",
+      rating: 4.5,
+      followers: 400,
+    },
   },
   {
     id: 100009,
@@ -101,6 +141,11 @@ const products = [
     categorySlug: "urunleri-kesfet",
     fast_delivery: false,
     shipping_free: true,
+    seller: {
+      name: "TY",
+      rating: 4.5,
+      followers: 80,
+    },
   },
   {
     id: 1000010,
@@ -113,6 +158,11 @@ const products = [
     categorySlug: "rani",
     fast_delivery: true,
     shipping_free: false,
+    seller: {
+      name: "PL",
+      rating: 4.5,
+      followers: 50,
+    },
   },
   {
     id: 1000011,
@@ -125,6 +175,11 @@ const products = [
     categorySlug: "rani",
     fast_delivery: false,
     shipping_free: true,
+    seller: {
+      name: "KU",
+      rating: 4.5,
+      followers: 150,
+    },
   },
   {
     id: 1000012,
@@ -137,6 +192,11 @@ const products = [
     categorySlug: "rani",
     fast_delivery: false,
     shipping_free: false,
+    seller: {
+      name: "ModaSepeti",
+      rating: 4.2,
+      followers: 50,
+    },
   },
   {
     id: 1000013,
@@ -148,6 +208,11 @@ const products = [
     categorySlug: "rabi",
     fast_delivery: true,
     shipping_free: false,
+    seller: {
+      name: "ModaSepeti",
+      rating: 4.4,
+      followers: 50,
+    },
   },
   {
     id: 1000014,
@@ -159,9 +224,14 @@ const products = [
     categorySlug: "rabi",
     fast_delivery: false,
     shipping_free: true,
+    seller: {
+      name: "DekorZevki",
+      rating: 3.4,
+      followers: 450,
+    },
   },
   {
-    id: 1000015,
+    id: 100015,
     title:
       "4'lü Akordiyon Katlanır Süzgeç Seti - Mutfak Çeyiz Seti (Akordeon Saplı Pirinç Süzgeci Huni Gri)",
     image:
@@ -171,9 +241,14 @@ const products = [
     categorySlug: "ceyiz-hazirliklari",
     fast_delivery: true,
     shipping_free: true,
+    seller: {
+      name: "DH",
+      rating: 4.0,
+      followers: 100,
+    },
   },
   {
-    id: 1000016,
+    id: 100016,
     title:
       "Çok Fonksiyonlu Sebze Doğrayıcı Rende - Vegetable Chopper - Çeyiz Listesi - Çeyiz Seti",
     image:
@@ -183,9 +258,14 @@ const products = [
     categorySlug: "ceyiz-hazirliklari",
     fast_delivery: false,
     shipping_free: true,
+    seller: {
+      name: "HSA",
+      rating: 4.0,
+      followers: 120,
+    },
   },
   {
-    id: 1000017,
+    id: 100017,
     title:
       "37 Ürün Pratik Mutfak Gereçleri, Çeyiz Seti, Hazırlık Sunum Pişirme Ürünleri",
     image:
@@ -195,9 +275,14 @@ const products = [
     categorySlug: "ceyiz-hazirliklari",
     fast_delivery: true,
     shipping_free: false,
+    seller: {
+      name: "UIH",
+      rating: 4.2,
+      followers: 90,
+    },
   },
   {
-    id: 1000018,
+    id: 100018,
     title: "Magou 1000ml Ahşap Kapaklı Lunch Box 2'li",
     image:
       "https://cdn.dsmcdn.com/ty1645/prod/QC/20250305/20/1fd4d79c-0f06-35b2-949f-694e033dd4b2/1_org_zoom.jpg",
@@ -206,9 +291,14 @@ const products = [
     categorySlug: "urunlere-goz-at",
     fast_delivery: true,
     shipping_free: true,
+    seller: {
+      name: "ASJ",
+      rating: 4.1,
+      followers: 80,
+    },
   },
   {
-    id: 1000019,
+    id: 100019,
     title: "Priour 4-lü Çay Fincanı",
     image:
       "https://cdn.dsmcdn.com/ty1572/prod/QC/20240927/20/4133d88e-f703-35ba-acb3-36486c8324cd/1_org_zoom.jpg",
@@ -217,9 +307,14 @@ const products = [
     categorySlug: "urunlere-goz-at",
     fast_delivery: false,
     shipping_free: true,
+    seller: {
+      name: "JFK",
+      rating: 4.3,
+      followers: 70,
+    },
   },
   {
-    id: 1000020,
+    id: 100020,
     title: "Klimalı Yastık - Beyaz 50 X 70",
     image:
       "https://cdn.dsmcdn.com/ty1662/prod/QC/20250415/08/e479b1b2-4645-3e86-afc1-c4e9041c1fc5/1_org_zoom.jpg",
@@ -228,9 +323,14 @@ const products = [
     categorySlug: "urunlere-goz-at",
     fast_delivery: true,
     shipping_free: false,
+    seller: {
+      name: "MNB",
+      rating: 4.0,
+      followers: 60,
+    },
   },
   {
-    id: 1000021,
+    id: 100021,
     title:
       "Ervin 4 Sele Raflı Tiba Atlantik Çam Airfry Çok Amaçlı Kiler Dolabı 4 Raflı Dolaplı Kahve Köşesi",
     image:
@@ -240,6 +340,11 @@ const products = [
     categorySlug: "avantajli-urunler",
     fast_delivery: false,
     shipping_free: true,
+    seller: {
+      name: "Def",
+      rating: 4.2,
+      followers: 110,
+    },
   },
   {
     id: 1000022,
@@ -251,6 +356,11 @@ const products = [
     categorySlug: "avantajli-urunler",
     fast_delivery: true,
     shipping_free: false,
+    seller: {
+      name: "GFR",
+      rating: 4.2,
+      followers: 110,
+    },
   },
   {
     id: 1000023,
@@ -263,6 +373,11 @@ const products = [
     categorySlug: "avantajli-urunler",
     fast_delivery: true,
     shipping_free: true,
+    seller: {
+      name: "UYH",
+      rating: 4.2,
+      followers: 450,
+    },
   },
   {
     id: 1000024,
@@ -274,6 +389,11 @@ const products = [
     categorySlug: "avantajli-urunler",
     fast_delivery: false,
     shipping_free: false,
+    seller: {
+      name: "VHB",
+      rating: 4.8,
+      followers: 210,
+    },
   },
   {
     id: 1000025,
@@ -285,6 +405,11 @@ const products = [
     categorySlug: "aksesuar-&-saat-&-gozluk-firsatlari",
     fast_delivery: true,
     shipping_free: false,
+    seller: {
+      name: "UYH",
+      rating: 4.1,
+      followers: 560,
+    },
   },
   {
     id: 1000026,
@@ -296,6 +421,11 @@ const products = [
     categorySlug: "aksesuar-&-saat-&-gozluk-firsatlari",
     fast_delivery: false,
     shipping_free: true,
+    seller: {
+      name: "ERT",
+      rating: 3.1,
+      followers: 421,
+    },
   },
   {
     id: 1000027,
@@ -308,6 +438,11 @@ const products = [
     categorySlug: "aksesuar-&-saat-&-gozluk-firsatlari",
     fast_delivery: true,
     shipping_free: true,
+    seller: {
+      name: "SDV",
+      rating: 4.1,
+      followers: 63,
+    },
   },
   {
     id: 1000028,
@@ -319,6 +454,11 @@ const products = [
     categorySlug: "aksesuar-&-saat-&-gozluk-firsatlari",
     fast_delivery: true,
     shipping_free: true,
+    seller: {
+      name: "ONB",
+      rating: 3.7,
+      followers: 250,
+    },
   },
   {
     id: 1000029,
@@ -330,6 +470,11 @@ const products = [
     categorySlug: "aksesuar-&-saat-&-gozluk-firsatlari",
     fast_delivery: true,
     shipping_free: true,
+    seller: {
+      name: "VGF",
+      rating: 4.5,
+      followers: 180,
+    },
   },
   {
     id: 1000030,
@@ -341,6 +486,11 @@ const products = [
     categorySlug: "yatak-odsai-mobilyasi",
     fast_delivery: true,
     shipping_free: true,
+    seller: {
+      name: "FKB",
+      rating: 4.8,
+      followers: 700,
+    },
   },
   {
     id: 1000031,
@@ -352,6 +502,11 @@ const products = [
     categorySlug: "yatak-odsai-mobilyasi",
     fast_delivery: true,
     shipping_free: true,
+    seller: {
+      name: "PBT",
+      rating: 4.0,
+      followers: 320,
+    },
   },
   {
     id: 1000032,
@@ -363,6 +518,11 @@ const products = [
     categorySlug: "yatak-odsai-mobilyasi",
     fast_delivery: false,
     shipping_free: true,
+    seller: {
+      name: "NFJ",
+      rating: 3.1,
+      followers: 200,
+    },
   },
   {
     id: 1000033,
@@ -374,6 +534,11 @@ const products = [
     categorySlug: "yatak-odsai-mobilyasi",
     fast_delivery: false,
     shipping_free: true,
+    seller: {
+      name: "TGB",
+      rating: 4.4,
+      followers: 410,
+    },
   },
   {
     id: 1000034,
@@ -386,6 +551,11 @@ const products = [
     categorySlug: "mutfak-&-banyo-mobilyasi",
     fast_delivery: false,
     shipping_free: true,
+    seller: {
+      name: "YTB",
+      rating: 4.3,
+      followers: 100,
+    },
   },
   {
     id: 1000035,
@@ -398,6 +568,11 @@ const products = [
     categorySlug: "mutfak-&-banyo-mobilyasi",
     fast_delivery: true,
     shipping_free: false,
+    seller: {
+      name: "UYH",
+      rating: 4.1,
+      followers: 560,
+    },
   },
   {
     id: 1000036,
@@ -409,6 +584,11 @@ const products = [
     categorySlug: "mutfak-&-banyo-mobilyasi",
     fast_delivery: true,
     shipping_free: true,
+    seller: {
+      name: "ASD",
+      rating: 4.1,
+      followers: 560,
+    },
   },
   {
     id: 1000037,
@@ -420,6 +600,11 @@ const products = [
     categorySlug: "mutfak-&-banyo-mobilyasi",
     fast_delivery: true,
     shipping_free: true,
+    seller: {
+      name: "DSD",
+      rating: 4.1,
+      followers: 560,
+    },
   },
   {
     id: 1000038,
@@ -432,6 +617,11 @@ const products = [
     categorySlug: "mutfak-&-banyo-mobilyasi",
     fast_delivery: false,
     shipping_free: true,
+    seller: {
+      name: "NMB",
+      rating: 4.1,
+      followers: 560,
+    },
   },
   {
     id: 1000039,
@@ -444,6 +634,11 @@ const products = [
     categorySlug: "mutfak-&-banyo-mobilyasi",
     fast_delivery: true,
     shipping_free: true,
+    seller: {
+      name: "GFN",
+      rating: 4.1,
+      followers: 560,
+    },
   },
   {
     id: 1000040,
@@ -455,6 +650,11 @@ const products = [
     categorySlug: "ayakkabi-ve-canta-trendini-yakala",
     fast_delivery: true,
     shipping_free: true,
+    seller: {
+      name: "T2t",
+      rating: 4.1,
+      followers: 560,
+    },
   },
   {
     id: 1000041,
@@ -466,6 +666,11 @@ const products = [
     categorySlug: "ayakkabi-ve-canta-trendini-yakala",
     fast_delivery: false,
     shipping_free: true,
+    seller: {
+      name: "HG",
+      rating: 4.1,
+      followers: 560,
+    },
   },
   {
     id: 1000042,
@@ -478,6 +683,11 @@ const products = [
     categorySlug: "ayakkabi-ve-canta-trendini-yakala",
     fast_delivery: false,
     shipping_free: true,
+    seller: {
+      name: "SD",
+      rating: 4.1,
+      followers: 560,
+    },
   },
   {
     id: 1000043,
@@ -490,6 +700,11 @@ const products = [
     categorySlug: "ayakkabi-ve-canta-trendini-yakala",
     fast_delivery: true,
     shipping_free: true,
+    seller: {
+      name: "UHY",
+      rating: 4.1,
+      followers: 560,
+    },
   },
   {
     id: 1000044,
@@ -501,6 +716,11 @@ const products = [
     categorySlug: "ayakkabi-ve-canta-trendini-yakala",
     fast_delivery: true,
     shipping_free: true,
+    seller: {
+      name: "NGJ",
+      rating: 4.1,
+      followers: 560,
+    },
   },
   {
     id: 1000045,
